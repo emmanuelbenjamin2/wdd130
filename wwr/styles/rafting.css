@@ -53,7 +53,8 @@ nav, p, section, article {
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
 }
 
 .hero h1 {
