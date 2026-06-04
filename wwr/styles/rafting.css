@@ -1,0 +1,81 @@
+/* CSS Variables */
+:root {
+    --primary-color: #1a4d2e;
+    --secondary-color: #4f6f52;
+    --accent1-color: #f5efe6;
+    --accent2-color: #a7c957;
+    --heading-font: Arial, sans-serif;
+    --body-font: Verdana, sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: var(--secondary-color);
+}
+
+/* Layout width */
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* Basic spacing */
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Social media links */
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: black;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    background-color: var(--accent1-color);
+    color: black;
+    padding: 10px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
