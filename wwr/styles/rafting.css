@@ -4,6 +4,7 @@
  --accent1-color: #f5efe6; 
  --heading-font: Arial, sans-serif; 
  --body-font: Verdana, sans-serif; 
+ --background-color: var(--accent1-color);
 }
  /* Reset */ * 
  { 
@@ -19,8 +20,8 @@
 } 
 /* Layout width */
  header, main, footer {
-     width: 840px;
-      margin: 0 auto; 
+     max-width: 840px;
+     margin: 0 auto; 
 }
  /* Headings */
   h1, h2 {
@@ -53,10 +54,9 @@
     top: 20px;
     width: 100%;
     text-align: center;
-    background-color: var(--accent2-color);
+    background-color: rgba(245, 239, 230, 0.85);
     color: black;
     padding: 10px;
-    opacity: 0.85;
 }
 
 .hero article {
@@ -64,11 +64,30 @@
     bottom: 20px;
     left: 20px;
     right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     background-color: var(--accent1-color);
     color: black;
     padding: 10px;
 }
 .hero article img {
-    float: right; 
-    width: 125px; 
+    width: 125px;
+    height: auto;
+}
+
+@media (max-width: 900px) {
+    header, main, footer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero article {
+        flex-direction: column;
+        text-align: center;
+    }
 }
