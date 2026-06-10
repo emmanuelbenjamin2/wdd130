@@ -91,3 +91,66 @@
         text-align: center;
     }
 }
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.logo-box img {
+    width: 120px;
+    height: auto;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+    width: 150px;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.socialmedia img {
+    width: 25px;
+    height: auto;
+}
+.history-content {
+    display: flex;
+    grid-template-columns: 1fr 200px 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.history-content img {
+    width: 200px;
+    height: auto;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
