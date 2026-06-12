@@ -188,3 +188,65 @@ button {
     border: none;
     cursor: pointer;
 }
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.trip {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
