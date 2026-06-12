@@ -1,214 +1,91 @@
-/* CSS Variables */
- :root { --primary-color: #1a4d2e;
- --secondary-color: #4f6f52;
- --accent1-color: #f5efe6; 
- --heading-font: Arial, sans-serif; 
- --body-font: Verdana, sans-serif; 
- --background-color: var(--accent1-color);
-}
- /* Reset */ * 
- { 
-   margin: 0; 
-   padding: 0; 
-   box-sizing: border-box;
-}
- /* Body */ 
- body { 
-    font-family: var(--body-font); 
-    color: var(--accent1-color); 
-    background-color: var(--secondary-color); 
-} 
-/* Layout width */
- header, main, footer {
-     max-width: 840px;
-     margin: 0 auto; 
-}
- /* Headings */
-  h1, h2 {
-     font-family: var(--heading-font);
-      color: var(--primary-color);
-} 
-/* Basic spacing */
- nav, p, section, article {
-     margin: 16px;
-      padding: 8px;
-}
-  /* Social media links */
-   .socialmedia a {
-     text-decoration: none; 
-} 
-
-.hero {
-    position: relative;
+/* =========================
+   CSS VARIABLES
+========================= */
+:root {
+    --primary-color: #1a4d2e;
+    --secondary-color: #4f6f52;
+    --accent1-color: #f5efe6;
+    --heading-font: Arial, sans-serif;
+    --body-font: Verdana, sans-serif;
 }
 
-.hero img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-    display: block;
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(245, 239, 230, 0.85);
-    color: black;
-    padding: 10px;
+/* =========================
+   BODY
+========================= */
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color: var(--accent1-color);
-    color: black;
-    padding: 10px;
-}
-.hero article img {
-    width: 125px;
-    height: auto;
-}
-
-@media (max-width: 900px) {
-    header, main, footer {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .hero h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero article {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-header {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
+/* =========================
+   MAIN LAYOUT CONTAINER
+========================= */
+header,
+main,
+footer {
     max-width: 840px;
     margin: 0 auto;
 }
 
-.logo-box img {
-    width: 120px;
-    height: auto;
+/* =========================
+   HEADINGS
+========================= */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
-.adventure-gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    flex-wrap: wrap;
+/* =========================
+   BASIC SPACING
+========================= */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
 }
 
-.adventure-gallery figure {
-    width: 150px;
-    text-align: center;
-}
-
-.adventure-gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.socialmedia {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.socialmedia img {
-    width: 25px;
-    height: auto;
-}
-.history-content {
-    display: flex;
-    grid-template-columns: 1fr 200px 1fr;
-    align-items: center;
-    gap: 20px;
-}
-
-.history-content img {
-    width: 200px;
-    height: auto;
-}
+/* =========================
+   NAVIGATION
+========================= */
 nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 500px;
-    
-}
-section figure {
-    display: inline-block;
-    margin: 10px;
-    text-align: center;
-}
-iframe {
-    width: 100%;
-    max-width: 600px;
-}
 
-section:nth-of-type(2) {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-form label {
-    font-weight: bold;
-    margin-top: 10px;
-}
-button {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #1a4d2e;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.home-grid {
+/* =========================
+   HEADER LAYOUT
+========================= */
+header {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    align-items: start;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
 }
 
-.grid-item {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-.grid-item img {
-    width: 100%;
+/* =========================
+   LOGO
+========================= */
+.logo-box img {
+    width: 120px;
     height: auto;
-    display: block;
-    border-radius: 8px;
 }
+
+/* =========================
+   HERO SECTION (FIXED)
+========================= */
 .hero {
     position: relative;
 }
@@ -231,15 +108,43 @@ button {
     text-align: center;
 }
 
+/* =========================
+   HOME GRID
+========================= */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* =========================
+   TRIPS GRID
+========================= */
 .trip-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
+    background-color: var(--accent1-color);
 }
 
 .trip {
-    background-color: #ffffff;
+    background-color: white;
+    color: black;
     padding: 15px;
     border-radius: 8px;
 }
@@ -247,6 +152,126 @@ button {
 .trip img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
     display: block;
+    border-radius: 8px;
+}
+
+/* =========================
+   FORMS
+========================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* =========================
+   FOOTER + SOCIAL MEDIA
+========================= */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.socialmedia img {
+    width: 25px;
+    height: auto;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* =========================
+   ADVENTURE GALLERY (ABOUT PAGE)
+========================= */
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+    width: 150px;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* =========================
+   HISTORY SECTION
+========================= */
+.history-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.history-content img {
+    width: 200px;
+    height: auto;
+}
+
+/* =========================
+   IFRAME (CONTACT PAGE)
+========================= */
+iframe {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 900px) {
+    header,
+    main,
+    footer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .history-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .trip-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
 }
